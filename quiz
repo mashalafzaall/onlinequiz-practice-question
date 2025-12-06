@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the number of cones sold: ";
+    cin>>n;
+    int price;
+    int totalincome=0;
+    int numoflargecones=0;
+    for (int i=1;i<=n;i++){
+       cout<<"the price of cone "<<i<<endl;
+       cin>>price;
+       if (price<120){
+           cout<<"small cone"<<endl;
+       }
+       else {
+           cout<<"large cone"<<endl;
+           numoflargecones++;
+       }
+    }
+      cout<<"total income is "  <<totalincome<<endl;
+      cout<<"the number of large cones is "<<numoflargecones<<endl;
+    
+    return 0;
+}
